@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyView Weather</title>
+    <link rel="icon" href="weather.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="blur-overlay"></div>
+    <div class="flicker" id="flicker"></div>
+
+    <div class="weather-app">
+        <h1>SkyView Weather</h1>
+        <input type="text" id="location" placeholder="Enter your location">
+        <button onclick="getWeather()">Get Weather</button>
+        <div class="weather-details" id="weather-details">
+            <!-- Weather details will appear here -->
+        </div>
+    </div>
+    <div class="mode-switch" onclick="toggleMode()">Light/Dark Mode</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
